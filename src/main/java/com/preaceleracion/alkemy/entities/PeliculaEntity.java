@@ -35,9 +35,7 @@ public class PeliculaEntity {
 
     private boolean deleted = Boolean.FALSE;
 
-
     /*relacion con personajes*/
-
     @ManyToMany(
             cascade = {
                     CascadeType.PERSIST,
@@ -51,7 +49,6 @@ public class PeliculaEntity {
 
     )
     private List<PersonajeEntity> characters = new ArrayList<>();
-
 
     /*relacion con genero*/
 
